@@ -9,7 +9,7 @@ os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
 # Create prompt template for generating ig_engagements
 
-ig_engagement_template = "Calculate my instagram engagement rate. Given number of likes are {n1}, comments are {n2}, saves are {n3}, shares are {n4} and number of followers are {n5}"
+ig_engagement_template = "Calculate my instagram engagement rate. Given number of likes are {n1}, comments are {n2}, saves are {n3}, shares are {n4} and number of followers are {n5}. Use the method where we consider all of these factors."
 
 ig_engagement_prompt = PromptTemplate(template = ig_engagement_template, input_variables = ['n1', 'n2','n3','n4','n5'])
 
